@@ -1,0 +1,130 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: century gothic;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+}
+
+.titulo {
+	padding: 40px;
+}
+
+nav ul {
+	width: 90%;
+	margin: auto;
+	border-radius: 10px;
+	list-style-type: none;
+	background-color: #b9daee;
+}
+nav li {
+	display: inline-flex;
+}
+nav a {
+	padding: 20px;
+	width: 150px;
+	font-size: 13px;
+}
+nav ul a:hover {
+	background-color: rgb(174, 201, 132);
+}
+
+.contenido {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	margin-top: 50px;
+}
+.contenido .articulo {
+	width: 70%;
+	margin: auto;
+}
+.contenido .articulo div {
+	width: 90%;
+	padding: 15px;
+	background-color: #69b5e0;
+	border-radius: 15px;
+	margin-bottom: 15px;
+}
+.contenido .articulo img {
+	width: 200px;
+	border-radius: 15px;
+}
+.contenido .articulo p{
+	text-align: justify;
+}
+.contenido .secundario {
+	width: 30%;
+}
+.contenido .secundario p {
+	background-color: #0a476b;
+	border-radius: 15px;
+	padding: 20px;
+	height: 700px;
+}
+
+.piedepagina {
+	background-color: #0a476b;
+	margin-top: 100px;
+}
+.piedepagina p {
+	padding: 100px;
+}
+
+/* Estilos para Banner */
+.banner{
+    position: relative;
+    background: url(../img/banner.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+}
+.overlay{
+    background: rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+}
+.cont-banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(219, 215, 215);
+}
+main{
+    width: 80%;
+    margin:20px auto;
+}
+main h2{
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+p{
+    font-size: 18px;
+    line-height: 30px;
+}
+.img-responsive{
+    width: 450px;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+section{
+    width: 80%;
+    margin:20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+article{
+    width: 450px;
+    margin-bottom: 10px;
+}
+.img-adaptable{
+    width: 100%;
+}

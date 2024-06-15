@@ -1,0 +1,14 @@
+.fondo-parallax{
+    background: url(../img-2/13.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding:20px 0px;
+}
+.parallax{
+    width: 80%;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
