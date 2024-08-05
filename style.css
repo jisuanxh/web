@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: tahoma;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background: black;
+    position: fixed;
+    z-index: 100000;
+}
+h1{
+    float: left;
+    color: white;
+    margin: 10px;
+}
+.botonera{
+    float: right;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.botonera ul{
+    display: flex;
+    list-style: none;
+}
+.botonera a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px;
+}
+/* Estilo del banner */
+
+.banner{
+    position: relative;
+    background: url(../tareai_sa/imagenes/introduccion-sistemas-operativos.jpg);
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+.cont-banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.cont-banner h2{
+    margin-bottom: 10px;
+}
+button{
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border: 0 none;
+}
+button:hover{
+    color: blue;
+}
+main{
+    width: 80%;
+    margin:20px auto;
+}
+main h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+}
+.img-responsive{
+    width: 400px;
+    max-width: 100%;
+    display: block;
+    margin: 10px auto;
+}
+section{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+article{
+    width: 300px;
+}
+/* Estilo para valores */
+.fondo-aside{
+    margin: 20px 0px;
+}
+.text-aside{
+    text-align: center;
+    margin-bottom: 10px auto;
+}
+.aside{
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+aside{
+    width: 300px;
+}
+aside h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.icon{
+    font-size: 30px;
+    color: purple;
+}
+.vl{
+    font-size: 40px;
+    color: brown;
+}
+
+.fondo-adoptame{
+    background: skyblue;
+    padding: 20px 0px;
+
+}
+.text-adoptame{
+    text-align: center;
+    color: yellow;
+    margin-bottom: 10px;
+}
+.pets{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.pet{
+    width: 220px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.img-pet:hover{
+    transform: rotate(3deg);
+    transition: 0.5s  ease-out;
+}
+.img-pet{
+    width: 220px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid yellow;
+    transition: 0.5s ease-out;
+}
+.fondo-contacts{
+    padding: 20px auto;
+
+}
+.text-contactos{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contactos{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact{
+    margin-bottom: 10px;
+    width: 300px;
+}
+.contact h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.listas li{
+    list-style-image: url(../img/vineta.png);
+    font-size: 18px;
+    line-height: 30px;
+}
+.fondo-footer{
+    background: black;
+    padding: 20px 0;
+}
+.footer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer{
+    width: 350px;
+    margin-bottom: 10px;
+    color: white
+}
+footer p{
+    text-align: center;
+}
+.pie{
+    background: darkgrey;
+    padding: 20px 0;
+}
+.pie p{
+    text-align: center;
+    color: white;
+}
+#check, #menu{
+    display: none;
+}
+#check:checked ~ .botonera{
+    left: 0%;
+}
+/* meddiaquaries para tablets */
+@media only screen and (max-width:980px){
+    .container, main , section, aside, .pets, .contactos{
+        width: 90%;
+    }
+    #menu{
+        display: block;
+        float: right;
+        font-size: 24px;
+        margin: 10px;
+    }
+    .botonera{
+        float: none;
+        position: relative;
+        left: -120%;
+        transition: 0.5s ease-out;
+    }
+    
+    .botonera ul{
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        top: 70px;
+        background: black;
+    }
+}
+/* meddiaquaries para celulares */
+@media only screen and (max-width:480px){
+    .container, main , section, aside, .pets, .contactos{
+        width: 95%;
+    }
+    article, aside, .pet, .contact{
+        width: 100%;
+    }
+}
